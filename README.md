@@ -1,3 +1,41 @@
+# Orland Ticketing Website
+
+Orland, ticketing website using laravel
+
+## Installation
+
+Cara instal orland_ticketing
+
+```bash
+cd <ke htdocs>
+git clone https://github.com/nekoeyes26/orland_ticketing_laravel.git
+cd <ke folder orland_ticketing>
+composer install
+copy .env.example .env
+php artisan key:generate
+```
+
+Ganti nama database
+
+```bash
+Buka File .env kemudian ganti nama databasenya:
+DB_DATABASE=laravel
+Sesuai keinginan, contoh:
+DB_DATABASE=orland_ticketing_db
+```
+
+Migration database
+
+```bash
+php artisan migrate:fresh --seed
+```
+
+(Opsional) Import database
+
+```bash
+pergi ke phpmyadmin, lakukan import database orland_ticketing_db.sql
+```
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
